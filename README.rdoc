@@ -1,6 +1,6 @@
 == loadcfg
 
-Rails gem for read environments constants following some convention.
+Rails gem for read environments variables configurations, just follow some convention.
 
 == Install
 
