@@ -1,6 +1,6 @@
 == loadcfg
 
-Rails gem for read environments variables configurations, just follow some convention.
+Rails gem for read environment variables configuration, just follow some convention.
 
 == Install
 
@@ -12,7 +12,7 @@ or then,
 
 == Usage
 
-Let's say you have some configuration constants that depends on the environment you are working on, for example config/facebook.yml
+Let's say you have some configuration variables that depend of the environment you are working on, for example config/facebook.yml
 
   development:
     app_id: <the_app_id_for_development_env>
@@ -31,20 +31,21 @@ Let's say you have some configuration constants that depends on the environment 
     secret_key: <the_secret_key_for_production_env>
     callback_url: <the_callback_url_for_production_env>
   
-One of the conventions is that you should put the file in the config dir of your proyect, then in any class where you want to use the constants you call the loadconfig method passing the config file name as symbol, for example
+One of the conventions is that you should put the file in the config directory of your rails project, then, in any class where you want to use the constants you just need to call loadconfig method passing the config file name as a symbol, for example:
 
   class FacebookHelper
     loadconfig :facebook
   end
 
-that's going to generate a constant for each key in the yaml config file with the file name as a prefix, for example
+that's going to generate a constant for each key in the yaml config file, each constant will has file name as a prefix, for example:
 
   class FacebookHelper
     loadconfig :facebook
   
     def some_method_that_deals_with_facebook_api
       fb_id = FACEBOOK_APP_ID
-      # here fb_id contains the value you gave for the environment you are working on
+      fb_secret_key = FACEBOOK_SECRET_KEY
+      # here fb_id and fb_secret_key contain the values you gave them for the environment you are working on      
     end
   end
 
