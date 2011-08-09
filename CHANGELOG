@@ -1,0 +1,2 @@
+v0.1
+-- Allow to load a configuration file, let's say config/whatever.yaml as constanst
