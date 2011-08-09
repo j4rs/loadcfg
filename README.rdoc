@@ -4,7 +4,11 @@ Rails gem for read environments constants following some convention.
 
 == Install
 
-gem install loadcfg --source http://gems.github.com or then gem 'loadcfg' in your bundle file.
+  gem install loadcfg
+  
+or then,
+
+  gem 'loadcfg' in your bundle file.
 
 == Usage
 
