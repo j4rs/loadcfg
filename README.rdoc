@@ -6,9 +6,9 @@ Rails gem for read environment variables configuration, just follow some convent
 
   gem install loadcfg
   
-or then,
-
-  gem 'loadcfg' in your Gemfile and run 'bundle install'.
+or then add gem 'loadcfg' to your Gemfile and run:
+  
+  bundle install
 
 == Usage
 
