@@ -1,2 +1,4 @@
+v0.2
+-- You can pass options to loadconfig method like your own environment and if will ignore to raise exceptions when no data is found the environment option.
 v0.1
 -- Allow you to load a configuration file, let's say config/whatever.yaml as constants

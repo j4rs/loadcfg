@@ -48,5 +48,13 @@ that's going to generate a constant for each key in the yaml config file, each c
       # here fb_id and fb_secret_key contain the values you gave them for the environment you are working on      
     end
   end
+  
+== Options
+
+There is a couple of options you can pass to loadconfig method
+  
+  loadconfig :facebook, :environment => :my_environment, :ignore_not_found => true
+
+If there's no my_environment entry in the config/facebook.yml file there will be no exception raised.
 
 That's it.
